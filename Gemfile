@@ -62,12 +62,15 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  gem 'annotate', github: 'tnir/annotate_models', branch: 'rails-8'
+
 end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+  gem 'minitest-rails', '~> 8.0'
 end
 
 # stylesheets with Tailwind CSS

@@ -11,8 +11,5 @@
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
 #
-class Film < ApplicationRecord
-  has_many :film_genres
-
-  validates :name, :synopsis, :realese_date, :rating, :duration, presence: true
+module FilmsHelper
 end

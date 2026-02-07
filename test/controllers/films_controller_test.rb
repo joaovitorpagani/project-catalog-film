@@ -11,8 +11,10 @@
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
 #
-class Film < ApplicationRecord
-  has_many :film_genres
+require "test_helper"
 
-  validates :name, :synopsis, :realese_date, :rating, :duration, presence: true
+class FilmsControllerTest < ActionDispatch::IntegrationTest
+  # test "the truth" do
+  #   assert true
+  # end
 end

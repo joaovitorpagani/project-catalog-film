@@ -1,0 +1,212 @@
+# == Schema Information
+#
+# Table name: film_genres
+#
+#  id         :bigint           not null, primary key
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  film_id    :bigint           not null
+#  genre_id   :bigint           not null
+#
+# Indexes
+#
+#  index_film_genres_on_film_id   (film_id)
+#  index_film_genres_on_genre_id  (genre_id)
+#
+# Foreign Keys
+#
+#  fk_rails_18d0ace0ad  (film_id => films.id)
+#  fk_rails_e7bab1bb99  (genre_id => genres.id)
+#
+
+# O Poderoso Chefão - Crime, Drama
+godfather_crime:
+  film: godfather_1
+  genre: crime
+
+godfather_drama:
+  film: godfather_1
+  genre: drama
+
+# Batman: O Cavaleiro das Trevas - Action, Crime, Drama
+dark_knight_action:
+  film: dark_knight
+  genre: action
+
+dark_knight_crime:
+  film: dark_knight
+  genre: crime
+
+dark_knight_drama:
+  film: dark_knight
+  genre: drama
+
+# Pulp Fiction - Crime, Drama
+pulp_fiction_crime:
+  film: pulp_fiction
+  genre: crime
+
+pulp_fiction_drama:
+  film: pulp_fiction
+  genre: drama
+
+# A Lista de Schindler - Drama
+schindlers_list_drama:
+  film: schindlers_list
+  genre: drama
+
+# O Senhor dos Anéis: O Retorno do Rei - Fantasy, Adventure, Action
+lotr_fantasy:
+  film: lotr_return_king
+  genre: fantasy
+
+lotr_adventure:
+  film: lotr_return_king
+  genre: adventure
+
+lotr_action:
+  film: lotr_return_king
+  genre: action
+
+# Clube da Luta - Drama
+fight_club_drama:
+  film: fight_club
+  genre: drama
+
+# The Matrix - Sci-Fi, Action
+matrix_scifi:
+  film: matrix
+  genre: sci_fi
+
+matrix_action:
+  film: matrix
+  genre: action
+
+# Os Bons Companheiros - Crime, Drama
+goodfellas_crime:
+  film: goodfellas
+  genre: crime
+
+goodfellas_drama:
+  film: goodfellas
+  genre: drama
+
+# Se7en - Crime, Drama
+seven_crime:
+  film: seven
+  genre: crime
+
+seven_drama:
+  film: seven
+  genre: drama
+
+# A Viagem de Chihiro - Animation, Adventure, Fantasy
+spirited_animation:
+  film: spirited_away
+  genre: animation
+
+spirited_adventure:
+  film: spirited_away
+  genre: adventure
+
+spirited_fantasy:
+  film: spirited_away
+  genre: fantasy
+
+# Gladiador - Action, Adventure, Drama
+gladiator_action:
+  film: gladiator
+  genre: action
+
+gladiator_adventure:
+  film: gladiator
+  genre: adventure
+
+gladiator_drama:
+  film: gladiator
+  genre: drama
+
+# Parasita - Drama, Crime
+parasite_drama:
+  film: parasite
+  genre: drama
+
+parasite_crime:
+  film: parasite
+  genre: crime
+
+# O Rei Leão - Animation, Adventure, Drama
+lion_king_animation:
+  film: lion_king
+  genre: animation
+
+lion_king_adventure:
+  film: lion_king
+  genre: adventure
+
+lion_king_drama:
+  film: lion_king
+  genre: drama
+
+# De Volta para o Futuro - Sci-Fi, Adventure
+back_to_future_scifi:
+  film: back_to_future
+  genre: sci_fi
+
+back_to_future_adventure:
+  film: back_to_future
+  genre: adventure
+
+# Alien - Horror, Sci-Fi
+alien_horror:
+  film: alien
+  genre: horror
+
+alien_scifi:
+  film: alien
+  genre: sci_fi
+
+# Psicose - Horror, Crime
+psycho_horror:
+  film: psycho
+  genre: horror
+
+psycho_crime:
+  film: psycho
+  genre: crime
+
+# WALL-E - Animation, Sci-Fi
+wall_e_animation:
+  film: wall_e
+  genre: animation
+
+wall_e_scifi:
+  film: wall_e
+  genre: sci_fi
+
+# Dunkirk - Drama, Action
+dunkirk_drama:
+  film: dunkirk
+  genre: drama
+
+dunkirk_action:
+  film: dunkirk
+  genre: action
+
+# Coringa - Crime, Drama
+joker_crime:
+  film: joker
+  genre: crime
+
+joker_drama:
+  film: joker
+  genre: drama
+
+# Blade Runner 2049 - Sci-Fi, Drama
+blade_runner_scifi:
+  film: blade_runner_2049
+  genre: sci_fi
+
+blade_runner_drama:
+  film: blade_runner_2049
+  genre: drama

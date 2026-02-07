@@ -1,0 +1,38 @@
+# == Schema Information
+#
+# Table name: genres
+#
+#  id         :bigint           not null, primary key
+#  name       :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+action:
+  name: "Ação"
+
+sci_fi:
+  name: "Ficção Científica"
+
+drama:
+  name: "Drama"
+
+comedy:
+  name: "Comédia"
+
+horror:
+  name: "Terror"
+
+romance:
+  name: "Romance"
+
+crime:
+  name: "Crime"
+
+fantasy:
+  name: "Fantasia"
+
+adventure:
+  name: "Aventura"
+
+animation:
+  name: "Animação"

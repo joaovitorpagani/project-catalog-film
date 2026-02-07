@@ -1,15 +1,155 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# == Schema Information
+#
+# Table name: films
+#
+#  id           :bigint           not null, primary key
+#  duration     :integer
+#  name         :string
+#  rating       :decimal(, )
+#  realese_date :date
+#  synopsis     :text
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+godfather_1:
+  name: "O Poderoso Chefão"
+  synopsis: "O patriarca de uma dinastia do crime organizado transfere o controle para seu filho."
+  realese_date: 1972-03-24
+  rating: 9.2
+  duration: 175
 
-one:
-  name: MyString
-  synopsis: MyText
-  realese_date: 2026-01-31
-  rating: 9.99
-  duration: 1
+dark_knight:
+  name: "Batman: O Cavaleiro das Trevas"
+  synopsis: "Batman enfrenta o Coringa em uma batalha psicológica e física por Gotham."
+  realese_date: 2008-07-18
+  rating: 9.0
+  duration: 152
 
-two:
-  name: MyString
-  synopsis: MyText
-  realese_date: 2026-01-31
-  rating: 9.99
-  duration: 1
+pulp_fiction:
+  name: "Pulp Fiction"
+  synopsis: "As vidas de dois assassinos, um boxeador e um gângster se entrelaçam."
+  realese_date: 1994-10-14
+  rating: 8.9
+  duration: 154
+
+schindlers_list:
+  name: "A Lista de Schindler"
+  synopsis: "Um empresário alemão salva judeus durante o Holocausto."
+  realese_date: 1993-12-15
+  rating: 9.0
+  duration: 195
+
+lotr_return_king:
+  name: "O Senhor dos Anéis: O Retorno do Rei"
+  synopsis: "A batalha final pela Terra Média e a jornada de Frodo ao Monte da Perdição."
+  realese_date: 2003-12-17
+  rating: 9.0
+  duration: 201
+
+fight_club:
+  name: "Clube da Luta"
+  synopsis: "Um homem insone e um vendedor de sabão criam um clube de luta underground."
+  realese_date: 1999-10-15
+  rating: 8.8
+  duration: 139
+
+
+matrix:
+  name: "The Matrix"
+  synopsis: "Um hacker descobre a verdade sobre sua realidade e seu papel na guerra contra as máquinas."
+  realese_date: 1999-03-31
+  rating: 8.7
+  duration: 136
+
+
+goodfellas:
+  name: "Os Bons Companheiros"
+  synopsis: "A história de Henry Hill e sua vida na máfia."
+  realese_date: 1990-09-19
+  rating: 8.7
+  duration: 145
+
+seven:
+  name: "Se7en"
+  synopsis: "Dois detetives caçam um serial killer que usa os sete pecados capitais."
+  realese_date: 1995-09-22
+  rating: 8.6
+  duration: 127
+   drama]
+
+spirited_away:
+  name: "A Viagem de Chihiro"
+  synopsis: "Uma menina entra em um mundo governado por deuses e espíritos."
+  realese_date: 2001-07-20
+  rating: 8.6
+  duration: 125
+
+gladiator:
+  name: "Gladiador"
+  synopsis: "Um general romano busca vingança contra o imperador corrupto que assassinou sua família."
+  realese_date: 2000-05-05
+  rating: 8.5
+  duration: 155
+
+parasite:
+  name: "Parasita"
+  synopsis: "Uma família pobre se infiltra na vida de uma família rica com consequências trágicas."
+  realese_date: 2019-05-30
+  rating: 8.5
+  duration: 132
+
+lion_king:
+  name: "O Rei Leão"
+  synopsis: "Um jovem príncipe leão foge após o assassinato de seu pai, apenas para aprender o dever."
+  realese_date: 1994-06-15
+  rating: 8.5
+  duration: 88
+
+back_to_future:
+  name: "De Volta para o Futuro"
+  synopsis: "Um adolescente viaja no tempo para 1955 em um carro modificado."
+  realese_date: 1985-07-03
+  rating: 8.5
+  duration: 116
+
+alien:
+  name: "Alien, o Oitavo Passageiro"
+  synopsis: "A tripulação de uma nave espacial encontra uma forma de vida mortal."
+  realese_date: 1979-05-25
+  rating: 8.5
+  duration: 117
+
+psycho:
+  name: "Psicose"
+  synopsis: "Uma secretária foge com dinheiro e acaba em um motel isolado administrado por um jovem estranho."
+  realese_date: 1960-06-16
+  rating: 8.5
+  duration: 109
+
+wall_e:
+  name: "WALL-E"
+  synopsis: "Um pequeno robô coletor de lixo embarca em uma jornada espacial que decide o destino da humanidade."
+  realese_date: 2008-06-27
+  rating: 8.4
+  duration: 98
+
+dunkirk:
+  name: "Dunkirk"
+  synopsis: "Soldados aliados são cercados pelo exército alemão durante uma batalha feroz na 2ª Guerra."
+  realese_date: 2017-07-21
+  rating: 7.8
+  duration: 106
+
+joker:
+  name: "Coringa"
+  synopsis: "A origem de um dos vilões mais icônicos do Batman em uma Gotham decadente."
+  realese_date: 2019-10-04
+  rating: 8.4
+  duration: 122
+
+blade_runner_2049:
+  name: "Blade Runner 2049"
+  synopsis: "Um novo blade runner descobre um segredo enterrado que pode desestabilizar a sociedade."
+  realese_date: 2017-10-06
+  rating: 8.0
+  duration: 164

@@ -10,9 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2026_01_31_174050) do
+ActiveRecord::Schema[8.0].define(version: 2026_02_07_213844) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
+
+  create_table "film_genres", force: :cascade do |t|
+    t.bigint "film_id", null: false
+    t.bigint "genre_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["film_id"], name: "index_film_genres_on_film_id"
+    t.index ["genre_id"], name: "index_film_genres_on_genre_id"
+  end
 
   create_table "films", force: :cascade do |t|
     t.string "name"
@@ -23,4 +32,13 @@ ActiveRecord::Schema[8.0].define(version: 2026_01_31_174050) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "genres", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "film_genres", "films"
+  add_foreign_key "film_genres", "genres"
 end
